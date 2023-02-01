@@ -1,0 +1,473 @@
+/* header css begin */
+.header {
+    margin-bottom: 100px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner .header-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header-inner .header-nav {
+    display: flex;
+    gap: 57px;
+}
+
+.header-inner .header-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #07043b;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .header-inner .header-left {
+        gap: 7px;
+    }
+    .header-inner .header-nav {
+        gap: 25px;
+    }
+}
+
+/* header css end */
+
+/* main css begin -- hero */
+
+.hero {
+    margin-bottom: 164px;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-inner .hero-left {
+    flex-basis: 45%;
+}
+
+.hero-inner .hero-left .hero-head {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.hero-inner .hero-left .hero-text {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hero-left .hero-input form label {
+    width: 100%;
+}
+
+.hero-left .hero-input input[type="email"] {
+    height: 45px;
+    width: 45%;
+    border-radius: 3.2px;
+    padding: 14px 21px;
+    border: none;
+    outline: none;
+    border-radius: 3.125px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+}
+
+.hero-left .hero-input input[type="email"]::placeholder {
+    color: #c2c2c2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.hero-left .hero-input form input[type="submit"] {
+    width: 45%;
+    height: 45px;
+    font-size: 14px;
+    line-height: 17px;
+    background: #2f65f8;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 3.125px;
+    color: #fff;
+    border: none;
+}
+
+.hero-inner .hero-right {
+    flex-basis: 45%;
+}
+
+.hero-inner .hero-right img {
+    width: 640px;
+}
+
+@media screen and (max-width: 900px) {
+    .hero-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-inner .hero-right img {
+        width: 305px;
+    }
+
+    .hero-input form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hero-left .hero-input input[type="email"] {
+        width: 100%;
+    }
+    .hero-left .hero-input form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* main css end -- hero */
+
+/* productive css begin */
+
+.productive {
+    background-image: url(../images/productive-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0;
+}
+
+.productive-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productive-left {
+    flex-basis: 45%;
+}
+
+.productive-left .productive-head {
+    font-size: 40px;
+    color: #07043b;
+    font-family: "Raleway", sans-serif;
+}
+
+.productive-left .productive-text {
+    font-size: 16px;
+    color: #07043b;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.productive-left .see-how {
+    text-decoration: none;
+    display: inline-block;
+    color: #3da08f;
+    line-height: 22px;
+    font-family: "Open Sans", sans-serif;
+    border-bottom: 1px solid #3da08f;
+    margin-bottom: 45px;
+}
+
+.productive-left .user-quote {
+    width: 356px;
+    height: 215px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+    border-radius: 5px;
+    padding: 33px 32px;
+    position: relative;
+}
+
+.productive-left .user-quote::before {
+    content: "“";
+    font-size: 45px;
+    position: absolute;
+    top: 12px;
+    left: 33px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.productive-left .user-quote .user-comment {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.user-quote .user-profile {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.user-profile .user-info .user-name {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.user-info .user-position {
+    font-size: 8px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.productive-right {
+    flex-basis: 45%;
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    .productive {
+        background-image: url(../images/mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .productive-inner {
+        flex-direction: column-reverse;
+        gap: 87px;
+    }
+
+    .productive-left {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .productive-left .productive-head {
+        font-size: 16px;
+    }
+
+    .productive-left .productive-text {
+        font-size: 14px;
+    }
+
+    .productive-left .see-how {
+        font-size: 12px;
+    }
+
+    .productive-right img {
+        width: 320px;
+    }
+
+    .user-quote {
+        text-align: left;
+    }
+}
+
+/* productive section css end */
+
+/* access section css begin */
+
+.access {
+    background: #575988;
+    color: #fff;
+    padding: 100px 80px;
+}
+
+.access-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.access-inner .access-left {
+    flex-basis: 40%;
+}
+
+.access-left .access-head {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.access-left .access-text {
+    letter-spacing: 0.6px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.access-right{
+    flex-basis: 30%;
+}
+
+.access-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.access-right form input[type="email"] {
+    width: 100%;
+    height: 48px;
+    outline: none;
+    border-radius: 3.13px;
+    border: none;
+    padding: 16px 22px;
+}
+
+.access-right form input[type="email"]::placeholder{
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+.access-right form input[type="submit"] {
+    width: 40%;
+    height: 48px;
+    border-radius: 3.13px;
+    background: #2f65f8;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    border: none;
+    transition: background 0.5s ease-in-out;
+}
+
+.access-right form input[type="submit"]:hover {
+    background: #6c9bff;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+}
+
+@media screen and (max-width:900px) {
+
+    .access{
+        padding: 54px 48px;
+    }
+    .access-inner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .access-left{
+        flex-basis: 100%;
+    }
+
+    .access-right{
+        flex-basis: 100%;
+    }
+
+    .access-right form input[type="submit"]{
+        width: 100%;
+    }
+
+    .access-right form input[type="email"] {
+        width: 100%;
+    }
+
+}
+
+/* access section css end */
+
+/* footer section css begin */
+
+.footer{
+    background: #07043B;
+    padding: 70px 80px;
+    color: #fff;
+}
+
+.footer-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-inner .footer-header{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-inner .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .footer-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+}
+
+.footer-nav .nav-left,
+.footer-nav .nav-right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-bottom .footer-contact p{
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    transition: all 0.5s ease;
+}
+
+.footer-nav a:hover{
+    color: #6C9BFF;
+}
+
+.footer-nav .social button{
+    width: 31px;
+    height: 31px;
+    background: none;
+    border-radius:50%;
+    color: #fff;
+    border: 1px solid #DFE4F0;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer-nav .social .twitter:hover{
+    color: #6C9BFF;
+}
+
+.footer-nav .social .facebook:hover{
+    color: #2f65f8;
+}
+
+@media screen and (max-width:900px) {
+    .footer-bottom{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-bottom .footer-nav{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-nav .social{
+        text-align: center;
+    }
+
+    .footer-nav a{
+        display: inline;
+    }
+}
+/* footer css end */

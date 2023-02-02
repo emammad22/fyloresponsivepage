@@ -9,7 +9,6 @@ body {
 .container {
     max-width: 1500px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1540px) {
@@ -18,8 +17,8 @@ body {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .container {
-        padding: 24px 24px;
+        padding: 30px 30px;
     }
 }

@@ -73,6 +73,7 @@
 
 .hero-left .hero-input form label {
     width: 100%;
+    transition: all 0.2s ease;
 }
 
 .hero-left .hero-input input[type="email"] {
@@ -110,6 +111,37 @@
 .hero-left .hero-input form input[type="submit"]:hover {
     background: #6c9bff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+}
+
+.hero-left .hero-input form .error {
+    border: 0.625px solid #ef4877;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+}
+
+.hero-left .hero-input form .validation-error{
+    position: relative;
+}
+
+.hero-left .hero-input form .validation-error::after{
+    content: 'Please check your email';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(20px);
+    color: #EF4877;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    opacity: 0;
+    animation: move 0.3s ease-in forwards;
+    transition: all 0.3s ease;
+}
+
+@keyframes move {
+    100%{
+       transform: translateY(40px);
+       opacity: 1.0; 
+    }
+    
 }
 
 .hero-inner .hero-right {
@@ -167,9 +199,6 @@
         width: 100%;
     }
 }
-
-
-
 
 /* main css end -- hero */
 

@@ -16,3 +16,21 @@ submit.addEventListener('click', (e) => {
     }
     e.preventDefault();
 })
+
+// access section validation
+
+var accessMail = document.getElementById('email');
+var text = document.getElementById('text');
+
+accessMail.addEventListener('input', (e) => {
+    if (accessMail.value.match(mailFormat)) {
+        if(text.classList.contains('invalid')){
+            text.classList.remove('invalid');
+        }
+        text.innerHTML= 'Your email addres is valid';
+        text.classList.add('valid')
+    } else {
+        text.innerHTML="Invalid email address";
+        text.classList.add('invalid');
+    }
+})
